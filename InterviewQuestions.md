@@ -36,13 +36,13 @@ What are the methods of Android IPC? Advantages and disadvantages and applicable
 ## Binder's system architecture:
 <b>Service Manager:</b> Service Manager is mainly responsible for all the services in the Android system. When the client wants to communicate with the server, it will first query and obtain the services that need to be interacted through the Service Manager. Of course, each service also needs to register its own service with Service Manager so that it can be queried and obtained by the server.
 <b>Service (Service):</b> The service here is the server mentioned above, which is usually also an Android system service. You can query and obtain a Server through the Service Manager.
-<b>Client:</> The client here generally refers to the application service on the Android system. It can request services in Service, such as Activity.
+<b>Client:</b> The client here generally refers to the application service on the Android system. It can request services in Service, such as Activity.
 Service proxy The service proxy refers to the Server proxy (proxy) generated in the client application. From the application point of view, there is no difference between a service proxy and a local object. Both methods can be called. The methods are synchronized and return corresponding results. Service agent is also the core module of Binder mechanism.
 
 <b>Binder driver</b> is used to implement the device driver of Binder, which is mainly responsible for organizing Binder's service nodes, calling Binder-related processing threads, and completing the actual Binder transmission. It is located at the bottom of the Binder structure (ie, the Linux kernel layer).
 
 The structural relationship between them is as follows:
-<img src="1944615-0a546c6de18e3afc.png" width="128"/>
+<img src="1944615-0a546c6de18e3afc.png" width="512"/>
 <li>Client, Server and Service Manager are implemented in user space, and Binder driver is implemented in kernel space</li>
 <li>Binder driver and Service Manager have been implemented in the Android platform, developers only need to implement their own Client and Server in the user space</li>
 <li>The Binder driver provides the device file/dev/binder to interact with the user space. Client, Server and Service Manager communicate with the Binder driver through open and ioctl file operation functions</li>
