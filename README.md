@@ -1,4 +1,30 @@
 # Design-Pattern-Examples
+ ## Creational patterns: These patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code. 
+    ## Factory Method: Provides an interface for creating objects in super class, but allows subclasses to alter the type of objects that will be created.
+    ## Abstract Factory: Lets you produce families of related objects without specifing their concreate classes.
+    ## Builder: Lets you construct complex objects step by step. It allows you to produce different types and representations of object using the same construction code.
+    ## Prototype: Let you copy existing object without making you code dependent on their classes.
+    ## Singleton: Lets you endsure that a class has only one instance, while providing a global access point to this instance.
+ ## Structural patterns: These patterns explain how to assemble objects and classes into larger structures while keeping these structures flexible and efficient.
+    ## Adaptor: Allows object with incompatable interfaces to colabrate.
+    ## Bridge: Lets split a large class of set of closely related classes into 2 seperate hierarchies-abstraction and impelmentation-which can be develop independently of each other.
+    ## Composite:
+    ## Decorator:Lets you attach a new behaviour to object by placing these objects inside special wrapper objects that contains the behaviour.
+    ## Facade: Provide a simplefide interface  to a library, a framework, or any other complex set of classes.
+    ## Flyweight:
+    ## Proxy:
+ ## Behavioral patterns: These patterns are concerned with algorithms and the assignment of responsibilities between objects.
+    ## Chain of Responsibity:
+    ## Command:
+    ## Iterator:
+    ## Mediator:
+    ## Memonto:
+    ## Observer: Lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they are observing.
+    ## State: Lets an object alter its behaviour when its internal state changes, It appears as if it the object changed its class.
+    ## Strategy:
+    ## Tamplate method: Defines a skelton of algorithm in the superclass but lets subclasses override specific stpes of the algorithm without changing its structure.
+    ## Visitor:
+
 
 # SOLID design principles
 
